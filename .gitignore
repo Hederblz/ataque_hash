@@ -1,3 +1,10 @@
+__pycache__/
+.pytest_cache
+*.pyc
 venv/
 .venv/
-rockyou.txt
+.env
+.env.*
+*.swp
+.vscode/
+.idea/
