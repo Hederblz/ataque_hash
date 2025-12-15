@@ -1,0 +1,13 @@
+# pyproject.toml
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seg_info_package"
+version = "0.1.0"
+# Adicione dependências e metadados aqui
+
+[tool.setuptools]
+# Diz ao setuptools para procurar o código-fonte na pasta 'src'
+packages = ["src"]

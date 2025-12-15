@@ -10,3 +10,7 @@ venv/
 .idea/
 rockyou.txt
 tables/
+dist/
+build/
+*.egg-info/
+.eggs/

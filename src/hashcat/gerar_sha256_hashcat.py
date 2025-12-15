@@ -1,5 +1,4 @@
 import random
-import hashlib
 from src.helper import *
 
 def main():
@@ -36,8 +35,8 @@ def main():
             f_gab.write(f"{usuario} -> Senha: {senha} | Salt: {salt}\n")
 
     print("\n--- Arquivos Gerados ---")
-    print(f"1. {arq_unsalted} -> Use com Rainbow Tables/Lookup.")
-    print(f"2. {arq_salted}   -> O Salt impede o uso de tabelas pré-calculadas.")
+    print(f"1. {arq_unsalted}")
+    print(f"2. {arq_salted}")
     print(f"3. {arq_gabarito}")
 
 if __name__ == "__main__":
