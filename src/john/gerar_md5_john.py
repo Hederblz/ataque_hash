@@ -1,18 +1,5 @@
-import hashlib
 import random
-import string
-
-SENHAS_FRACAS = [
-    "123456", "senha", "password", "admin", "12345678", "futebol", 
-    "brasil", "master", "amor", "segredo", "jesus", "qwerty", "mudar123"
-]
-
-def gerar_senha_aleatoria(tamanho=8):
-    caracteres = string.ascii_letters + string.digits
-    return ''.join(random.choice(caracteres) for _ in range(tamanho))
-
-def criar_hash_md5(senha):
-    return hashlib.md5(senha.encode('utf-8')).hexdigest()
+from src.helper import *
 
 def main():
     print("--- Gerador MD5 para John the Ripper ---")
@@ -34,7 +21,6 @@ def main():
             usuario = f"user_{i+1}"
             h = criar_hash_md5(senha)
             
-            # O John aceita bem o formato user:hash
             f_hash.write(f"{usuario}:{h}\n")
             f_gab.write(f"{usuario} -> {senha}\n")
 
