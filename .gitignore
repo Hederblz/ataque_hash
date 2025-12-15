@@ -8,3 +8,5 @@ venv/
 *.swp
 .vscode/
 .idea/
+rockyou.txt
+tables/
